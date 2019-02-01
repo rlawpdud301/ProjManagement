@@ -24,7 +24,6 @@ public class DaoTest {
 	@Test
 	public void testinsert() throws SQLException {
 		ProjManagementVO projManagement = new ProjManagementVO();
-		projManagement.setProj_no(1);
 		projManagement.setProj_name("±èÀð¿µ");
 		projManagement.setProj_cont("User4");
 		projManagement.setStart_date(new Date());
