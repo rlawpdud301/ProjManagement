@@ -25,7 +25,7 @@
 							<label>시작날짜</label> <input type="text" id="datepickerStr"	class="form-control" name="start_date" placeholder="Start Date" readonly="readonly">
 						</div>
 						<div class="form-group">
-							<label>마감날짜</label> <input type="text" id="datepickerEnd"	name="end_date" class="form-control" placeholder="Start Date" readonly="readonly">
+							<label>마감날짜</label> <input type="text" id="datepickerEnd"	name="end_date" class="form-control" placeholder="End Date" readonly="readonly">
 						</div>
 						<div class="form-group">
 							<label>상태</label> <select name="progress">

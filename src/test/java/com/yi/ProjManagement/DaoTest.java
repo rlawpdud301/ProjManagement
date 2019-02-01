@@ -31,23 +31,33 @@ public class DaoTest {
 		projManagement.setEnd_date(new Date());
 		projManagement.setProgress("진행중");
 		
+		
 		dao.insert(projManagement);
+		
 	}
 	
 	@Test
-	public void testList() throws SQLException {
+	public void testselect() throws SQLException {
 		System.out.println(dao.select());
 	}
 	
-	/*@Test
-	public void testupdate() {
-		ReplyVO vo= new ReplyVO();
-		vo.setRno(1);
-		vo.setReplytext("sdafsdafsdafsdaf");
+	@Test
+	public void testselectByNo() throws SQLException {
+		System.out.println(dao.selectByNo("1"));
+	}
+	
+	@Test
+	public void testupdate() throws SQLException {
+		ProjManagementVO vo= new ProjManagementVO();
+		vo.setProj_no(1);
+		vo.setProj_name("asdasd");
+		vo.setProj_cont("ㅁㅁㅁㅁㅁㅁㅁ");
+		vo.setProgress("보류");
 		dao.update(vo);
 	}
+	
 	@Test
-	public void testdelet() {
-		dao.delete(2);
-	}*/
+	public void testdelet() throws SQLException {
+		dao.delet("1");
+	}
 }

@@ -3,7 +3,6 @@
   PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.yi.mapper.ManagementMapper">
-
 	<insert id="insert">
 		INSERT INTO projmanagement.proj
 		(proj_name, proj_cont,
@@ -17,7 +16,6 @@
 		proj_cont, start_date, end_date, progress
 		FROM projmanagement.proj
 	</select>
-
 	<select id="selectByNo"
 		resultType="com.yi.domain.ProjManagementVO">
 		SELECT proj_no, proj_name, proj_cont, start_date, end_date,
@@ -49,5 +47,4 @@
 		WHERE proj_no=#{proj_no};
 
 	</update>
-
 </mapper>
